@@ -37,4 +37,4 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "16"
-      - run: cd ./main && npm i && npm build && ls -al
+      - run: cd ./main && npm i && npm run build && ls -al
