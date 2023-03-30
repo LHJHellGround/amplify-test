@@ -21,9 +21,9 @@ jobs:
         include:
           - TEST_NAME: "Latest v2"
             AWS_CLI_VERSION: "2"
-    name: Test ${{ matrix.TEST_NAME }} ${{ matrix.AWS_CLI_VERSION }}
+    name: Test !!!${{ matrix.TEST_NAME }} ${{ matrix.AWS_CLI_VERSION }}
     steps:
-      - name: Test ${{ matrix.TEST_NAME }}
+      - name: Test @@@${{ matrix.TEST_NAME }}
         id: install-aws-cli
         uses: unfor19/install-aws-cli-action@master
         with:
